@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+body{
+    font-family: 'Lato',sans-serif;
+    color: #fff;
+}
+.album{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.sample,.sample img{
+    width: 250px;
+    height: 141px;
+    top: 0;
+    left: 0;
+}
+.sample {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.sample img,
+.hover-left,
+.hover-right{
+    position: absolute;
+}
+.hover-left{
+    width: 250px;
+    height: 141px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 101;
+    left: -250px;
+}
+.hover-right{
+    width: 250px;
+    height: 141px;
+    z-index: 101;
+    font-size: 75%;
+    text-align: center;
+    left: 250px;
+}
+.hover-right h1{
+    padding-top: 35px;
+}
+.hover-right i {
+    font-weight: 300;
+}
+.hover-left,
+.hover-right{
+    transition: .5s;
+}
+.sample:hover > .hover-left{
+    left: 0px;
+}
+.sample:hover > .hover-right{
+    left: 0px;
+}
